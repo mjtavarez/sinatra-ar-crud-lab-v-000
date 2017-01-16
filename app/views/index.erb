@@ -1,0 +1,7 @@
+<% @posts.each do |post| %>
+<div style="margin-bottom: 20px">
+  <h1><a href="/posts/<%= post.id %>" style="text-decoration: none; color:black;"><%= post.id %>. <%= post.name %></a></h1>
+  <p style="background-color:#00CCCC"><%= post.content %></p>
+  <br>
+</div>
+<% end %>
